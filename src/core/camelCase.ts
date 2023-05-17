@@ -1,10 +1,8 @@
-export function convert(words: string): string {
-    let wordInCamelCase = "";
-
-    words.split(getWordSplitterPattern()).forEach(word => {
-        wordInCamelCase += capitalizeWord(word)
-    })
-    return wordInCamelCase
+export function convert(text: string): string {
+    const words = text.split(getWordSplitterPattern());
+    return words.map(word => {
+        return capitalizeWord(word)
+    }).join('')
 }
 
 function getWordSplitterPattern(): RegExp {
