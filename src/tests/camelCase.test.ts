@@ -49,4 +49,13 @@ describe("camelCase converter should", () => {
 
         expect(result).toBe(expected)
     })
+
+    it("given two words separate by space, returns the joined words with the first letter of each in uppercase", () => {
+        const word = "like pigs"
+        const expected = "LikePigs"
+
+        const result = convert(word)
+
+        expect(result).toBe(expected)
+    })
 })
