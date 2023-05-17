@@ -67,4 +67,14 @@ describe("camelCase converter should", () => {
 
         expect(result).toBe(expected)
     })
+
+    it("given multiple words, returns the joined words with the first letter of each in uppercase", () => {
+        const word = "I am in love of bulding model-ships or model Ships because I like crafting"
+        const expected = "IAmInLoveOfBuldingModelShipsOrModelShipsBecauseILikeCrafting"
+
+        const result = convert(word)
+
+        expect(result).toBe(expected)
+    })
+
 })

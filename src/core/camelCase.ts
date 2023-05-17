@@ -8,7 +8,7 @@ export function convert(words: string): string {
 }
 
 function getWordSplitterPattern(): RegExp {
-    return /[_ ]/;
+    return /[-_ ]/;
 }
 
 function capitalizeWord(word: string) {
