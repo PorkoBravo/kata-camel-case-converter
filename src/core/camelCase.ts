@@ -1,13 +1,11 @@
 export function convert(words: string): string {
-
     let wordInCamelCase = "";
-
-    words.split(" ").forEach(word => {
+    
+    const wordSplitterRegExp = /[-_ ]/;
+    words.split(wordSplitterRegExp).forEach(word => {
         wordInCamelCase += capitalizeWord(word)
     })
-
     return wordInCamelCase
-    
 }
 
 function capitalizeWord(word: string) {
