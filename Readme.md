@@ -2,6 +2,8 @@
 
 My proposed solution to the camelCase Kata (in PascalCase style) made as part as the course Código Sostenible.
 
+The given words are delimitated by hyphens, both underscores and underscores, and spaces.
+
 # Template - Testing Sostenible con TypeScript
 
 Plantilla base para practicar las katas del curso o para empezar un proyecto nuevo.

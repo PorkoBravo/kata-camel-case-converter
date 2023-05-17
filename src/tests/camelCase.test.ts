@@ -77,4 +77,12 @@ describe("camelCase converter should", () => {
         expect(result).toBe(expected)
     })
 
+    it("given a symbol, return the same symbol", () => {
+        const word = "#?"
+        const expected = "#?"
+
+        const result = convert(word)
+
+        expect(result).toBe(expected)
+    })
 })
