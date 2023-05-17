@@ -32,4 +32,12 @@ describe("camelCase converter should", () => {
         expect(result).toBe(expected)
     })
 
+    it("given one word with first letter in uppercase, returns same word", () => {
+        const word = "Camel"
+        const expected = "Camel"
+
+        const result = convert(word)
+
+        expect(result).toBe(expected)
+    })
 })
