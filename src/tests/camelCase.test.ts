@@ -40,4 +40,13 @@ describe("camelCase converter should", () => {
 
         expect(result).toBe(expected)
     })
+
+    it("given one word with first letter NOT in uppercase, returns same word with first letter in uppercase", () => {
+        const word = "pig"
+        const expected = "Pig"
+
+        const result = convert(word)
+
+        expect(result).toBe(expected)
+    })
 })
